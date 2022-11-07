@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body>
+<script>
+    // 用const声明的变量不可改变，声明时必须赋值
+    // const PI = '3.1415926';
+    // console.log(PI)
+
+    // 暂时性死区
+    // var PI = '3.1415926';
+    // if (true){
+    //     console.log(PI)
+    //     let PI;
+    // }
+    // symbol的惟一性
+    let s1 = Symbol();
+    let s2 = Symbol('another symbol');
+    let s3 = Symbol('another symbol');
+    // s1===s2 false
+    // s2 === s3 false
+    console.log(s3 === s2)
+
+</script>
+
+</body>
+</html>
